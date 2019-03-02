@@ -1,0 +1,957 @@
+2019-03-02 11:58:54 AM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 11:58:57 AM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                             GET / HTTP/1.1
+                             User-Agent: websocket-sharp/1.0
+                             Host: localhost:8080
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Key: vCUVYJ024rbits0Wz4EntA==
+                             Sec-WebSocket-Version: 13
+2019-03-02 11:58:57 AM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                             HTTP/1.1 404 Not Found
+                             Content-Type: text/plain; charset=utf-8
+                             X-Content-Type-Options: nosniff
+                             Date: Sat, 02 Mar 2019 16:58:57 GMT
+                             Content-Length: 19
+                             
+                             404 page not found
+2019-03-02 11:58:57 AM|Fatal|WebSocket.connect|Not a WebSocket handshake response.
+2019-03-02 11:58:57 AM|Debug|WebSocket.connect|WebSocketSharp.WebSocketException: Not a WebSocket handshake response.
+                               at WebSocketSharp.WebSocket.doHandshake () [0x0002a] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                               at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 11:58:57 AM|Trace|WebSocket.close|Begin closing the connection.
+2019-03-02 11:58:57 AM|Debug|WebSocket.closeHandshake|Was clean?: False
+                               sent: False
+                               received: False
+2019-03-02 11:58:57 AM|Trace|WebSocket.close|End closing the connection.
+2019-03-02 11:59:01 AM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 11:59:40 AM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 11:59:41 AM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                             GET /echo HTTP/1.1
+                             User-Agent: websocket-sharp/1.0
+                             Host: localhost:8080
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Key: sP0g3D0J0Ky321dLIBsu9A==
+                             Sec-WebSocket-Version: 13
+2019-03-02 11:59:42 AM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                             HTTP/1.1 101 Switching Protocols
+                             Upgrade: websocket
+                             Connection: Upgrade
+                             Sec-WebSocket-Accept: M9MVfIo6SnjMf6pXptCEHjrktEo=
+2019-03-02 11:59:51 AM|Trace|WebSocket.close|Begin closing the connection.
+2019-03-02 11:59:51 AM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 11:59:51 AM|Debug|WebSocket.closeHandshake|Was clean?: True
+                               sent: True
+                               received: True
+2019-03-02 11:59:51 AM|Trace|WebSocket.close|End closing the connection.
+2019-03-02 3:04:56 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:04:57 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Gyr9lVJRSo4opmghoUYzfA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:04:57 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: +5EAwPKxxzwsDHUsMKxAxuRSEWU=
+2019-03-02 3:04:57 PM|Error|WebSocket.messagec|Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: H. Path '', line 0, position 0.
+                              at Newtonsoft.Json.JsonTextReader.ParseValue () [0x002b3] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonTextReader.Read () [0x0004c] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonReader.ReadAndMoveToContent () [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonContract contract, System.Boolean hasConverter) [0x00043] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) [0x000d9] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00053] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) [0x0002d] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x0000c] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:30 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:05:07 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:05:07 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:05:46 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:05:47 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: vQPywM+28EZpZaIH3sy+5Q==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:05:47 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: clwQV5Z7Y5F50GiDjrGSZg7G0l8=
+2019-03-02 3:05:47 PM|Error|WebSocket.messagec|Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: H. Path '', line 0, position 0.
+                              at Newtonsoft.Json.JsonTextReader.ParseValue () [0x002b3] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonTextReader.Read () [0x0004c] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonReader.ReadAndMoveToContent () [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonContract contract, System.Boolean hasConverter) [0x00043] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) [0x000d9] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00053] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) [0x0002d] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x0000c] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:30 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:05:50 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:05:50 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:06:03 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:06:04 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: C0SQMesrBW/r71vFfhrFaA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:06:04 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: tr6bUDh+qFN/zTVtCrehPPmtp0w=
+2019-03-02 3:06:16 PM|Error|WebSocket.messagec|Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: H. Path '', line 0, position 0.
+                              at Newtonsoft.Json.JsonTextReader.ParseValue () [0x002b3] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonTextReader.Read () [0x0004c] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonReader.ReadAndMoveToContent () [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonContract contract, System.Boolean hasConverter) [0x00043] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) [0x000d9] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00053] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) [0x0002d] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x0000c] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:30 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:06:20 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+                            . ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:06:20 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:08:21 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:08:25 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:08:27 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: /OQipft9vTBblRSGLgtP7A==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:08:27 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Plv3PlK7EQmmTY4Zm+JGViWzw38=
+2019-03-02 3:08:48 PM|Error|WebSocket.messagec|Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: H. Path '', line 0, position 0.
+                              at Newtonsoft.Json.JsonTextReader.ParseValue () [0x002b3] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonTextReader.Read () [0x0004c] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonReader.ReadAndMoveToContent () [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonContract contract, System.Boolean hasConverter) [0x00043] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) [0x000d9] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00053] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonSerializer.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) [0x0002d] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value) [0x00000] in <97722d3abc9f4cf69f9e21e6770081b3>:0 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x0000c] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:30 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:10:09 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:10:10 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: EAQtVEleLaWHi6RbzfucmA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:10:10 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: D40o1CmTWoQvpV1L9KfcAhkPMpo=
+2019-03-02 3:10:17 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|WebSocketSharp.WebSocketException: The header of a frame cannot be read from the stream.
+                              at WebSocketSharp.WebSocketFrame.processHeader (System.Byte[] header) [0x0001a] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocketFrame+<>c__DisplayClass73_0.<readHeaderAsync>b__0 (System.Byte[] bytes) [0x00000] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x0009e] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:10:17 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:10:57 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:10:58 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: /kFvyYLbRpjs9PY3AbEHkg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:10:58 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: lDuyES39Xg5ehXQMws6PqiH/aD0=
+2019-03-02 3:11:35 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:11:35 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:15:04 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:15:05 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: ltMh4MIdptdnrrOjAOEnmw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:15:05 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: L2kw/MuABwIg+oUI1C6HK7kGKi0=
+2019-03-02 3:15:20 PM|Error|WebSocket.messagec|UnityEngine.UnityException: LoadSceneAsyncNameIndexInternal can only be called from the main thread.
+                            Constructors and field initializers will be executed from the loading thread when loading a scene.
+                            Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+                              at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.LoadSceneAsyncNameIndexInternal_Injected(string,int,UnityEngine.SceneManagement.LoadSceneParameters&,bool)
+                              at UnityEngine.SceneManagement.SceneManager.LoadSceneAsyncNameIndexInternal (System.String sceneName, System.Int32 sceneBuildIndex, UnityEngine.SceneManagement.LoadSceneParameters parameters, System.Boolean mustCompleteNextFrame) <0x1ad62a70 + 0x0006a> in <d0107ededa464b62a3a48cfb7b3e0850>:0 
+                              at UnityEngine.SceneManagement.SceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneParameters parameters) [0x00005] in C:\buildslave\unity\build\Runtime\Export\SceneManager\SceneManager.cs:124 
+                              at UnityEngine.SceneManagement.SceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneMode mode) [0x0000b] in C:\buildslave\unity\build\Runtime\Export\SceneManager\SceneManager.cs:112 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x00046] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:40 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:15:29 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:15:29 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:15:59 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:16:00 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: ewYr2ki3Wn1WK55VTd3NWg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:16:01 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: OY3zVi5Z8T9Qq2ahqMl1DU7ur6U=
+2019-03-02 3:16:04 PM|Error|WebSocket.messagec|UnityEngine.UnityException: LoadSceneAsyncNameIndexInternal can only be called from the main thread.
+                            Constructors and field initializers will be executed from the loading thread when loading a scene.
+                            Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+                              at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.LoadSceneAsyncNameIndexInternal_Injected(string,int,UnityEngine.SceneManagement.LoadSceneParameters&,bool)
+                              at UnityEngine.SceneManagement.SceneManager.LoadSceneAsyncNameIndexInternal (System.String sceneName, System.Int32 sceneBuildIndex, UnityEngine.SceneManagement.LoadSceneParameters parameters, System.Boolean mustCompleteNextFrame) <0x1acec1c0 + 0x0006a> in <d0107ededa464b62a3a48cfb7b3e0850>:0 
+                              at UnityEngine.SceneManagement.SceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneParameters parameters) [0x00005] in C:\buildslave\unity\build\Runtime\Export\SceneManager\SceneManager.cs:124 
+                              at UnityEngine.SceneManagement.SceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneMode mode) [0x0000b] in C:\buildslave\unity\build\Runtime\Export\SceneManager\SceneManager.cs:112 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x00046] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:40 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:16:24 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:16:24 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:16:29 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:16:30 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: d6s+b2hRNfJB9G7SY/wN9A==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:16:30 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 3wmUxlvSElnAIdKt+O2MId4w2Mk=
+2019-03-02 3:16:45 PM|Error|WebSocket.messagec|UnityEngine.UnityException: LoadSceneAsyncNameIndexInternal can only be called from the main thread.
+                            Constructors and field initializers will be executed from the loading thread when loading a scene.
+                            Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+                              at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.LoadSceneAsyncNameIndexInternal_Injected(string,int,UnityEngine.SceneManagement.LoadSceneParameters&,bool)
+                              at UnityEngine.SceneManagement.SceneManager.LoadSceneAsyncNameIndexInternal (System.String sceneName, System.Int32 sceneBuildIndex, UnityEngine.SceneManagement.LoadSceneParameters parameters, System.Boolean mustCompleteNextFrame) <0x1ad66b20 + 0x0006a> in <d0107ededa464b62a3a48cfb7b3e0850>:0 
+                              at UnityEngine.SceneManagement.SceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneParameters parameters) [0x00005] in C:\buildslave\unity\build\Runtime\Export\SceneManager\SceneManager.cs:124 
+                              at UnityEngine.SceneManagement.SceneManager.LoadScene (System.String sceneName, UnityEngine.SceneManagement.LoadSceneMode mode) [0x0000b] in C:\buildslave\unity\build\Runtime\Export\SceneManager\SceneManager.cs:112 
+                              at CustomNetworkManager.OnWebSocketMessage (System.Object sender, WebSocketSharp.MessageEventArgs e) [0x00046] in E:\Projects\Wonderjam2019\Wonderjam2019\Assets\Network\CustomNetworkManager.cs:40 
+                              at WebSocketSharp.Ext.Emit[TEventArgs] (System.EventHandler`1[TEventArgs] eventHandler, System.Object sender, TEventArgs e) [0x00009] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.messagec (WebSocketSharp.MessageEventArgs e) [0x00003] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:16:50 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:16:50 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:18:13 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:18:14 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: +oos3TKVePhbYjUsUnR+Hw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:18:14 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: t0N7qfqXnYrHDjingy8o9woc8Aw=
+2019-03-02 3:18:34 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:18:34 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:19:30 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:19:31 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: HzVBGRCZ0Kugmb0K097+vg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:19:31 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: akjw2HpLm5MAvdeRS+o00gEp6L4=
+2019-03-02 3:43:17 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:43:19 PM|Fatal|WebSocket.connect|No connection could be made because the target machine actively refused it.
+
+2019-03-02 3:43:19 PM|Debug|WebSocket.connect|System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it.
+                            
+                              at System.Net.Sockets.TcpClient..ctor (System.String hostname, System.Int32 port) [0x0006d] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.WebSocket.setClientStream () [0x00066] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.doHandshake () [0x00001] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:43:19 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:43:21 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:45:16 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:45:18 PM|Fatal|WebSocket.connect|No connection could be made because the target machine actively refused it.
+
+2019-03-02 3:45:18 PM|Debug|WebSocket.connect|System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it.
+                            
+                              at System.Net.Sockets.TcpClient..ctor (System.String hostname, System.Int32 port) [0x0006d] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.WebSocket.setClientStream () [0x00066] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.doHandshake () [0x00001] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:45:18 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:45:22 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:45:58 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:46:00 PM|Fatal|WebSocket.connect|No connection could be made because the target machine actively refused it.
+
+2019-03-02 3:46:00 PM|Debug|WebSocket.connect|System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it.
+                            
+                              at System.Net.Sockets.TcpClient..ctor (System.String hostname, System.Int32 port) [0x0006d] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.WebSocket.setClientStream () [0x00066] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.doHandshake () [0x00001] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:46:00 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:46:02 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:48:22 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:48:24 PM|Fatal|WebSocket.connect|No connection could be made because the target machine actively refused it.
+
+2019-03-02 3:48:24 PM|Debug|WebSocket.connect|System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it.
+                            
+                              at System.Net.Sockets.TcpClient..ctor (System.String hostname, System.Int32 port) [0x0006d] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.WebSocket.setClientStream () [0x00066] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.doHandshake () [0x00001] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:48:24 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:48:37 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:48:38 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=trucmuche HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: VK3nPlDx8eg8xNV6DnLqvQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:48:38 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: YAFkgm+5YFmwSXDOHFWPQfLII/s=
+2019-03-02 3:48:46 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:48:47 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=trucmuche HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: SrAtK+efq1Ffbj6nHbGm8Q==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:48:47 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: mrDEfBkZwhIBloZiZ4aPqbo+s+4=
+2019-03-02 3:48:51 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:48:51 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:48:52 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=trucmuche HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: vFfvYZ+E584n9VvWUVFOhg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:48:52 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Nz/VIVbF0Zn6T/FD7U0P9H9+Lys=
+2019-03-02 3:48:52 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=trucmuche HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: u3zJwuWPftj0GLQnUiLhGQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:48:52 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: gyBy2Qbt352KVL0Fnp+TpTrNLS0=
+2019-03-02 3:48:58 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:48:58 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:51:59 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:52:01 PM|Fatal|WebSocket.connect|No connection could be made because the target machine actively refused it.
+
+2019-03-02 3:52:01 PM|Debug|WebSocket.connect|System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it.
+                            
+                              at System.Net.Sockets.TcpClient..ctor (System.String hostname, System.Int32 port) [0x0006d] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.WebSocket.setClientStream () [0x00066] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.doHandshake () [0x00001] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:52:01 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:52:07 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:52:17 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:52:18 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: kDj9g/TE9INgO9+Hwlw4mw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:52:18 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: xXQxj36V6xZVKr/QoL4BTQER+Do=
+2019-03-02 3:52:30 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:52:30 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 3:52:30 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:52:31 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 03apodXYDFQnjN+M2XRoNw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:52:31 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: WoGDtwV8fPbLeXjO0CxtaRZFROw=
+2019-03-02 3:53:20 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:53:21 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Qe4prSpFfmaApfg6VowE0w==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:53:21 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: F5cvAOQeRgrxMFd9oujZH0gx6ns=
+2019-03-02 3:54:00 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+                            . ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:54:00 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:54:03 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:55:32 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:55:34 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: g8t1nKeGdVmvxw4YC+VvHg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:55:34 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: G7fInHggxcWCAzueiRfrjvLJZcc=
+2019-03-02 3:56:13 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.
+                            . ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:56:13 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:56:19 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:56:45 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:56:46 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: zbf+OOJFnh62Z3zZW8x1pg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:56:46 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: LbT9uCQG4ZHYWbx6KoWkODG9E/c=
+2019-03-02 3:57:09 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine.
+                            . ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 3:57:09 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 3:57:22 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 3:57:45 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 3:57:47 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: /w7gCZAPUyHKiPmZoIiACQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 3:57:47 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Y8zPZu7I5WzVWZOWJsuI2kzjF18=
+2019-03-02 3:59:04 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 3:59:04 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:11:21 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:11:23 PM|Fatal|WebSocket.connect|No connection could be made because the target machine actively refused it.
+
+2019-03-02 4:11:23 PM|Debug|WebSocket.connect|System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it.
+                            
+                              at System.Net.Sockets.TcpClient..ctor (System.String hostname, System.Int32 port) [0x0006d] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.WebSocket.setClientStream () [0x00066] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.doHandshake () [0x00001] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocket.connect () [0x000fa] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 4:11:23 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 4:12:38 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 4:14:17 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:14:18 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: b/E3p7zeiDxsyVtMn1cCeA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:14:18 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: tAA4KJk5YVmHABL7aJaZqZhHdP4=
+2019-03-02 4:14:36 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:14:36 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:15:17 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:15:18 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: us+VEfTuB773bDBvmggnRg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:15:18 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: QuucNYajnNIeBxnlQykr8hP4eOE=
+2019-03-02 4:15:54 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:15:54 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:21:21 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:21:22 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: +2j5K9KOtPRYmXgnl32dQw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:21:22 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: whPzjL6JJ0lCNFqG7syTUZxuttU=
+2019-03-02 4:39:11 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:39:11 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:41:01 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:41:02 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: L4ZSz1WTF4Rkd22chM60/w==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:41:02 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: FewZpmTaRa9fNDqO0cN8Q1XJ+Jg=
+2019-03-02 4:41:47 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:41:47 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:42:08 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:42:09 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: eGjcomQLYGVMDPprd1iO6A==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:42:09 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: aZLv5E5Qx0rOFkvQZhfAAMQrRxU=
+2019-03-02 4:42:55 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:42:55 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:43:38 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:43:39 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: zknR54UTK3gkSNcvuur7EQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:43:39 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: XoF6J1R9cRt8Qpr1xMbUlqD6QKQ=
+2019-03-02 4:43:48 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine.
+                            . ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 4:43:48 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 4:45:00 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:45:01 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: AZpnWLw2/fy0UA2lrvqtcA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:45:01 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 6nA8L5rmReb31Be5IwxBBdJw7fQ=
+2019-03-02 4:45:54 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine.
+                            . ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 4:45:54 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 4:46:05 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 4:47:44 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:47:45 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: N8OHnfpIrJ7BCG9sKsphdA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:47:45 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: qzBMDxUbp0jhjRl9AUHWU6GTEEo=
+2019-03-02 4:48:04 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:48:04 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:48:09 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:48:10 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: ji63+uhlqwKy9lHIKbX3vg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:48:10 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: sitxuPiupUEAzaIAK/WrpR/HV7w=
+2019-03-02 4:48:38 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:48:38 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:48:43 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:48:44 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: /e1huzAsozWf9aSsKqk2bA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:48:44 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Q1Iff2XIZZEYxzPYFHyxElJLIR8=
+2019-03-02 4:49:10 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine.
+                            . ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 4:49:10 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 4:49:56 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:49:57 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: eS04yjnH03YJH1MmaKaTJw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:49:57 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: KqzpO6JVUJQsKSkaQwo2It+T+08=
+2019-03-02 4:50:11 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine.
+                            . ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine.
+                            
+                              at System.Net.Sockets.Socket.EndReceive (System.IAsyncResult asyncResult) [0x00012] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x00057] in <3845a180c26b4889bc2d47593a665814>:0 
+                               --- End of inner exception stack trace ---
+                              at System.Net.Sockets.NetworkStream.EndRead (System.IAsyncResult asyncResult) [0x0009b] in <3845a180c26b4889bc2d47593a665814>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x00002] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 4:50:11 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 4:50:16 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 4:50:44 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:50:45 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: AozPP1g1+4TsJ1yYwO43ig==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:50:45 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: ew7Q3ikwlyRK2THzXuiArrM/Nhk=
+2019-03-02 4:51:04 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:51:04 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 4:51:09 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 4:51:10 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: hqy16d72yDL/lxea81dLQg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 4:51:10 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: U5zk0KTGaS/xGTK5MvyWF62ZtyY=
+2019-03-02 4:51:19 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 4:51:19 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:02:53 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:02:54 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 7Dx2SRIVA4INAUz3Z5xAug==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:02:54 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: QnXJLk6uxN5pLMCRGIhVZSEri/Y=
+2019-03-02 5:02:57 PM|Fatal|<>c__DisplayClass174_0.<startReceiving>b__2|WebSocketSharp.WebSocketException: The header of a frame cannot be read from the stream.
+                              at WebSocketSharp.WebSocketFrame.processHeader (System.Byte[] header) [0x0001a] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.WebSocketFrame+<>c__DisplayClass73_0.<readHeaderAsync>b__0 (System.Byte[] bytes) [0x00000] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+                              at WebSocketSharp.Ext+<>c__DisplayClass56_0.<ReadBytesAsync>b__0 (System.IAsyncResult ar) [0x0009e] in <1a3c3d52c1d442dbae264c2144146f94>:0 
+2019-03-02 5:02:57 PM|Debug|WebSocket.closeHandshake|Was clean?: False
+                              sent: False
+                              received: False
+2019-03-02 5:05:32 PM|Info |WebSocket.close|The connection has already been closed.
+2019-03-02 5:05:40 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:05:41 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Praw9hgMdWgwhG1QTOkAxQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:05:41 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: Z194wuqN+uwfLmKhTj+cm3I4RTE=
+2019-03-02 5:05:54 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:05:54 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:17:19 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:17:20 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: GJosg5kPcIJyL5+qWc1Afg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:17:21 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: 5D506wfn61BrYcqFW1nVlAETdQw=
+2019-03-02 5:17:39 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:17:39 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:19:10 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:19:11 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: Gy3DbD8gH4Kn0mDdZC0YVA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:19:11 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: VtHHqwfcraSbCDzyJ8F7c20vCHM=
+2019-03-02 5:19:22 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:19:22 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:19:46 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:19:47 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: rt42coZ7DzT+eyOH+bIEqQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:19:47 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: MDLuwQlnA8WqyFp1ZuIGuIPhsls=
+2019-03-02 5:19:59 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:19:59 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
