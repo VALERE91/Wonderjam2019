@@ -955,3 +955,93 @@
 2019-03-02 5:19:59 PM|Debug|WebSocket.closeHandshake|Was clean?: True
                               sent: True
                               received: True
+2019-03-02 5:47:34 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:47:35 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: YJeRbfIkUFRDH+xu9zEErw==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:47:35 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: xkPW8imlUOi3xi6LFwKOwWjRfXk=
+2019-03-02 5:48:15 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:48:15 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:49:18 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:49:19 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: DoBlia2h+vwrH5ebhsqAeg==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:49:19 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: TwD/dk10/I2W9XaZh43ClSh6AW4=
+2019-03-02 5:50:18 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:50:18 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:50:35 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:50:36 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: NJnHps7sTqCmliRUHb6j8A==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:50:36 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: +jyrLr5yeqSMqb7ELeO5wFCFXP0=
+2019-03-02 5:51:22 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:51:22 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:51:38 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:51:40 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: 1j76Q1EuIpovg9FeU1fEfA==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:51:40 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: chfo/QJdrU9LnAqu+3xERKtw+i0=
+2019-03-02 5:52:31 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:52:31 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True
+2019-03-02 5:53:08 PM|Warn |Logger.set_File|The current path to the log file has been changed to wsLog.log.
+2019-03-02 5:53:09 PM|Debug|WebSocket.sendHttpRequest|A request to the server:
+                            GET /wonderjam?pseudo=tutu HTTP/1.1
+                            User-Agent: websocket-sharp/1.0
+                            Host: localhost:8080
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Key: p7c76EXtyVXRPKyipFCuwQ==
+                            Sec-WebSocket-Version: 13
+2019-03-02 5:53:09 PM|Debug|WebSocket.sendHttpRequest|A response to this request:
+                            HTTP/1.1 101 Switching Protocols
+                            Upgrade: websocket
+                            Connection: Upgrade
+                            Sec-WebSocket-Accept: DZRHb2gQ7isRy7GhMjvEOXFiT+M=
+2019-03-02 5:53:54 PM|Info |WebSocket.close|The closing is already in progress.
+2019-03-02 5:53:54 PM|Debug|WebSocket.closeHandshake|Was clean?: True
+                              sent: True
+                              received: True

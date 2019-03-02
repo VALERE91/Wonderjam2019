@@ -19,10 +19,15 @@ public class CustomReplicationManager : MonoBehaviour
     private Dictionary<string, GameObject> m_replica;
 
     public CustomNetworkManager m_networkManager;
-    
+
+    private long m_nextUpdate;
+
+    public uint UpdateFrequency = 10;
+
     // Start is called before the first frame update
     void Start()
     {
+        m_replica = new Dictionary<string, GameObject>();
         m_networkManager = FindObjectOfType<CustomNetworkManager>();
 
         if(m_networkManager == null || m_networkManager.MatchMakingResult == null)
@@ -86,6 +91,12 @@ public class CustomReplicationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        m_nextUpdate -= (long)(Time.deltaTime * 1000);
+        if(m_nextUpdate > 0)
+        {
+            return;
+        }
+
+        m_nextUpdate = 1000 / UpdateFrequency;
     }
 }
