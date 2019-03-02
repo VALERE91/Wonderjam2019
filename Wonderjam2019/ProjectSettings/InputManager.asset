@@ -37,8 +37,6 @@ InputManager:
     type: 0
     axis: 0
     joyNum: 0
-<<<<<<< HEAD
-=======
   - serializedVersion: 3
     m_Name: Cancel
     descriptiveName: 
@@ -567,4 +565,3 @@ InputManager:
     type: 0
     axis: 0
     joyNum: 4
->>>>>>> 99bd8e098754b968f3f549e93a17b2bc5dc232af

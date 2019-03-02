@@ -23,6 +23,7 @@ public class CustomNetworkManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MatchMakingResult = null;
         m_displayDebugNetwork = false;
         DontDestroyOnLoad(this);
     }
